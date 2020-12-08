@@ -1,0 +1,15 @@
+{
+    "name":"TaskTitle",
+    "description":"teambition添加复制按钮 by wangyh",
+    "version":"1.1",
+    "manifest_version":2,
+    "browser_action":{
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.teambition.com/*"],
+            "js": ["jquery.min.js","script.js"]
+        }
+    ]
+}
