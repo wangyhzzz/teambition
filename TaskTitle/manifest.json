@@ -1,7 +1,7 @@
 {
     "name":"TaskTitle",
     "description":"teambition添加复制按钮 by wangyh",
-    "version":"1.1",
+    "version":"1.2",
     "manifest_version":2,
     "browser_action":{
         "default_icon": "icon.png"
