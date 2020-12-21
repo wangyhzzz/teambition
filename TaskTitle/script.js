@@ -1,8 +1,8 @@
 setInterval(function () {
-    var label = $('.task-id-label')[0]
+    var label = $('span[data-clipboard-text*="MMO"]')[0]
     if(!label)return;
     if(label.innerText!=label.getAttribute("data-clipboard-text"))return;
-    var desc = $('.object-content__irzS')[0]
+    var desc = $('div[class*="task-content-readonly"]')[0]
     if(!desc)return;
     label.setAttribute("data-clipboard-text",label.innerText+":"+desc.innerText)
     label.style.color='#f00'
