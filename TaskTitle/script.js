@@ -3,6 +3,8 @@ setInterval(function () {
     if(!label)return;
     if(label.innerText!=label.getAttribute("data-clipboard-text"))return;
     var desc = $('div[class*="task-content-readonly"]')[0]
+    if(!desc)
+        desc = $('div[class*="division-caption"]')[0]
     if(!desc)return;
     label.setAttribute("data-clipboard-text",label.innerText+":"+desc.innerText)
     label.style.color='#f00'
